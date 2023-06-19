@@ -21,7 +21,6 @@ function generateBoxes() {
 }
 function paintBoxes(event) {
     event.target.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) +")";
-    console.log("mouse entered");
 }
 function displayCurrentGridSelection() {
     let rangeSelector = document.getElementById("select-squares");
