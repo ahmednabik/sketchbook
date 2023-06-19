@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
+
 <body>
-    <div class="container"></div>
-    
+    <div class="container">
+        <div class="user-inputs">
+            <label for="select-squares">Select No. of Squares:</label>
+            <input type="range" min="16" max="64" step="16" value="16" id="select-squares" class="select-squares">
+            <div id="selected-squares"></div>
+        </div>
+        <div class="play-area"></div>
+    </div>
 </body>
 </html>
