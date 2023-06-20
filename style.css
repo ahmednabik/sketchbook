@@ -12,11 +12,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .box {
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid #ffe4c4;
 }
 .container {
     display: flex;
@@ -31,3 +32,97 @@ body {
 .select-squares {
     cursor:grab;
 }
+
+.resolution {
+    display: flex;
+    align-items: center;
+    
+}
+.resolution input {
+    display: none;
+}
+
+.resolution label{
+    background-color:bisque;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    color: #a87638;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.resolution label:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 20%;
+    border: 1px solid #a87638;
+    display: inline-block;
+    margin-right: 10px ;
+}
+.resolution input[type = "radio"]:checked + label {
+    background-color: #face99;
+    border: 2px solid #a87638;
+    transform: scale(1.05);
+}
+
+.resolution input[type='radio']:checked + label:before {
+    content: "\2713";
+    width: 15px;
+    height: 15px;
+    border-radius: 20%;
+    border: 1px solid #a87638;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+.clear-btn {
+    padding: 10px 40px;
+    background-color: #e96e67;
+    border-radius: 5px;
+    border: 1px solid #e96e67;
+    box-shadow: #face99;
+
+
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 1px solid #a87638;
+  border-radius: 5px;
+  box-shadow: #a87638 4px 4px 0 0;
+  color: #a87638;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 40px;
+  line-height: 33px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+

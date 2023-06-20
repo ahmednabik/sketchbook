@@ -12,17 +12,25 @@
 
 <body>
     <div class="container">
-        <div class="user-inputs">
-            <div id="debt-amount-slider">
-                <input type="radio" name="debt-amount" id="1" value="16" required>
-                <label for="1" data-debt-amount="16 x 16"></label>
-                <input type="radio" name="debt-amount" id="2" value="32" required>
-                <label for="2" data-debt-amount="32 x 32"></label>
-                <input type="radio" name="debt-amount" id="3" value="48" required>
-                <label for="3" data-debt-amount="48 x 48"></label>
-                <input type="radio" name="debt-amount" id="4" value="64" required>
-                <label for="4" data-debt-amount="64 x 64"></label>
+        
+        <div id="resolution" class="resolution">
+            <div>
+                <input type="radio" name="radio-btn" id="16" value="16" checked>
+                <label for="16" value="16">16 x 16</label>
             </div>
+            <div>
+                <input type="radio" name="radio-btn" id="32" value="32">
+                <label for="32" value="32">32 x 32</label>
+            </div>
+            <div>
+                <input type="radio" name="radio-btn" id="48" value="48">
+                <label for="48" value="48">48 x 48</label>
+            </div>
+            <div>
+                <input type="radio" name="radio-btn" id="64" value="64">
+                <label for="64" value="64">64 x 64</label>
+            </div>
+            <button class="button-74" id="clear-btn">Clear</button>
         </div>
         <div class="play-area"></div>
     </div>
