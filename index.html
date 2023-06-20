@@ -13,11 +13,19 @@
 <body>
     <div class="container">
         <div class="user-inputs">
-            <label for="select-squares">Select No. of Squares:</label>
-            <input type="range" min="16" max="64" step="16" value="16" id="select-squares" class="select-squares">
-            <div id="selected-squares"></div>
+            <div id="debt-amount-slider">
+                <input type="radio" name="debt-amount" id="1" value="16" required>
+                <label for="1" data-debt-amount="16 x 16"></label>
+                <input type="radio" name="debt-amount" id="2" value="32" required>
+                <label for="2" data-debt-amount="32 x 32"></label>
+                <input type="radio" name="debt-amount" id="3" value="48" required>
+                <label for="3" data-debt-amount="48 x 48"></label>
+                <input type="radio" name="debt-amount" id="4" value="64" required>
+                <label for="4" data-debt-amount="64 x 64"></label>
+            </div>
         </div>
         <div class="play-area"></div>
     </div>
 </body>
+
 </html>
